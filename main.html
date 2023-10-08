@@ -5,25 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roof and Foundation Damage Detection</title>
     <link rel="stylesheet" href="main.css"> <!-- Add this line to link your CSS file -->
-</head>
-<!-- ... rest of your HTML code ... -->
-</html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roof and Foundation Damage Detection</title>
-    <!-- Add your CSS and JavaScript links here if needed -->
+    
     <style>
         /* Add your CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <h1>Welcome to Roof and Foundation Damage Detection</h1>
-        <p>Your trusted solution for assessing roof and foundation issues.</p>
-    </header>
+        <div id="logo-container">
+            <img src="logo.png" alt="Logo" id="logo">
+        </div>
+        <div>
+            <h1>Damage Detect Pro</h1>
+            <br>
+            <p>Your trusted solution for assessing house repair issues.</p>
+    </div>
+        </header>
 
     <!-- Main Content Section -->
     <main>
@@ -61,6 +80,7 @@
         </section>
     </main>
 
+
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2023 HackUTA MHS People. All rights reserved.</p>
@@ -68,14 +88,28 @@
 
     <!-- Add your JavaScript code here to handle image analysis and display results -->
     <script>
-        function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+        // JavaScript code for rotating the logo on scroll
+window.addEventListener("scroll", function() {
+    const logo = document.getElementById("logo");
+    const scrollY = window.scrollY;
+
+    // Define the rotation angle based on scroll position
+    const rotationAngle = scrollY; // Adjust the divisor to control rotation speed
+
+    // Apply the rotation to the logo
+    logo.style.transform = `rotate(${rotationAngle}deg)`;
+});
+
     </script>
+        <script>
+            function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+        </script>
 </body>
 </html>
