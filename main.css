@@ -1,0 +1,94 @@
+/* Reset default styles */
+html, body, h1, h2, p, div, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Set the background color and font for the entire page */
+body {
+    background-color: #E7CFBC;
+    font-family: Arial, sans-serif;
+    background-image: url('crack.png'); /* Path to your image */
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed as you scroll */
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.9; /* Adjust the opacity value as needed */
+}
+
+/* Header styles */
+header {
+    background-color: #966B9D;
+    color: #FFF4EC;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFF4EC;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image upload section styles */
+#imageUpload {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#imageInput {
+    display: none; /* Hide the file input */
+}
+
+#analyzeButton {
+    background-color: #C98686;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#analyzeButton:hover {
+    background-color: #F2B880;
+}
+
+/* Results section styles */
+#results {
+    text-align: center;
+}
+
+#resultImage img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid #966B9D;
+    border-radius: 5px;
+}
+
+#damageStatus {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #966B9D;
+    color: #FFF4EC;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Industrial-themed styling */
+/* You can add more specific industrial-themed styles as needed */
