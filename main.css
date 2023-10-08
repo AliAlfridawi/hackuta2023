@@ -46,10 +46,6 @@ main {
     margin-bottom: 20px;
 }
 
-#imageInput {
-    display: none; /* Hide the file input */
-}
-
 #analyzeButton {
     background-color: #C98686;
     color: white;
