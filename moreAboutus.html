@@ -10,6 +10,21 @@
 </html>
 
 <body>
+     <!-- Main Content Section -->
+     <main>
+        <!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="moreaboutus.html" class="active">About Us</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="contact.html">Contact</a>
+      <a href="main.html">Main</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
     <header>
         <h1>More About Damage Detect Pro</h1>
         <p>Your trusted solution for assessing roof and foundation issues.</p>
@@ -31,5 +46,15 @@
         <p>Whether you're a business owner looking to safeguard your operations or an individual seeking to protect your home and belongings, Damage Detect Pro is here to support you. Together, we can prevent damage, save resources, and build a brighter, more sustainable future.</p>
     </main>
 </body>
+<script>
+     function myFunction() { 
+        var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 </body>
 </html>

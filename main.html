@@ -27,6 +27,19 @@
 
     <!-- Main Content Section -->
     <main>
+        <!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="#home" class="active">Main</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="contact.html">Contact</a>
+      <a href="moreAboutus.html">About</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
         <section id="imageUpload">
             <h2>Upload an Image</h2>
             <p>Upload a photo of the damaged area for analysis:</p>
@@ -41,6 +54,9 @@
             </div>
             <p id="damageStatus">Damage Status: <span id="damageValue">Awaiting Analysis</span></p>
         </section>
+        <section>
+            <a href="moreAboutus.html"><button type="submit">Learn More About Us</button></a>
+        </section>
     </main>
 
     <!-- Footer Section -->
@@ -50,9 +66,14 @@
 
     <!-- Add your JavaScript code here to handle image analysis and display results -->
     <script>
-        // JavaScript code for image analysis and result display
-        // You can use libraries like TensorFlow.js or OpenCV.js for image processing
-        // Update the DOM elements with the analysis results
+        function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
     </script>
 </body>
 </html>
