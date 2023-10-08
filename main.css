@@ -24,6 +24,32 @@ header {
     padding: 20px;
     text-align: center;
 }
+/* Reset default styles */
+html, body, h1, h2, p, div, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Set the background color and font for the entire page */
+body {
+    background-color: #E7CFBC;
+    font-family: Arial, sans-serif;
+    background-color: #f4e69b; 
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed as you scroll */
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.9; /* Adjust the opacity value as needed */
+}
+
+/* Header styles */
+header {
+    background-color: #f06244;
+    color: #FFF4EC;
+    padding: 20px;
+    text-align: center;
+}
 
 header h1 {
     font-size: 36px;
@@ -69,7 +95,7 @@ main {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
-    border: 1px solid #966B9D;
+    border: 1px solid #f06244;
     border-radius: 5px;
 }
 
@@ -80,11 +106,14 @@ main {
 
 /* Footer styles */
 footer {
-    background-color: #966B9D;
+    background-color: #f06244;
     color: #FFF4EC;
     text-align: center;
     padding: 10px;
 }
+
+/* Industrial-themed styling */
+/* You can add more specific industrial-themed styles as needed */
 
 /* Industrial-themed styling */
 /* You can add more specific industrial-themed styles as needed */
