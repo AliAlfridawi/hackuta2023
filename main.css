@@ -1,6 +1,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 /* Reset default styles */
-html, body, h1, h2, p, div, section {
+html, body, h1, h2, p, div, section, ul, li {
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,27 +18,14 @@ body {
     opacity: 0.9; /* Adjust the opacity value as needed */
 }
 
-/* Header styles */
-header {
-    background-color: #f06244;
-    color: #FFF4EC;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
 /* Main content styles */
 main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #FFF4EC;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff4ec; /* White background for softer appearance */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
 }
 
 /* Image upload section styles */
@@ -57,8 +44,20 @@ main {
     transition: background-color 0.3s;
 }
 
+#analyzeButton:active {
+    background-color: #F26D6D; /* Change the color on click */
+    transform: scale(0.95); /* Add a slight scale-down effect */
+}
+
+/* Apply the clockwise rotation */
+.rotate {
+    transform: rotate(360deg);
+}
+
+/* ... your previous CSS rules ... */
+
 #analyzeButton:hover {
-    background-color: #F2B880;
+    background-color: #F2B880; /* Lighter red on hover */
 }
 
 /* Results section styles */
@@ -70,8 +69,8 @@ main {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
-    border: 1px solid #f06244;
-    border-radius: 5px;
+    border: 1px solid #f06244; /* Dark gray border */
+    border-radius: 5px; /* Rounded corners for images */
 }
 
 #damageStatus {
@@ -86,7 +85,35 @@ footer {
     text-align: center;
     padding: 10px;
 }
-/* Style the navigation menu */
+
+/* Header styles */
+header {
+    background-color: #f06244; /* Dark gray for an industrial look */
+    color: #FFF4EC;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Vertically center content */
+}
+
+#logo-container {
+    flex: 0 0 auto; /* Prevent logo from growing */
+    margin-right: 20px; /* Add some space between logo and title */
+}
+
+#logo {
+    max-width: 100px; /* Adjust the size as needed */
+}
+
+#title-container {
+    flex: 1; /* Allow the title to grow and take available space */
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
 .topnav {
     overflow: hidden;
     background-color: white;
