@@ -3,113 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roof and Foundation Damage Detection</title>
-    <link rel="stylesheet" href="main.css"> <!-- Add this line to link your CSS file -->
-    
-    <style>
-        /* Add your CSS styles here */
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        main {
-            flex-grow: 1;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>DamageDetect Pro</title>
+    <!-- Include Tailwind CSS -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div id="logo-container">
-            <img src="logo.png" alt="Logo" id="logo">
-        </div>
-        <div>
-            <h1>Damage Detect Pro</h1>
-            <br>
-            <p>Your trusted solution for assessing house repair issues.</p>
-    </div>
-        </header>
+<body class="bg-gray-100 font-sans">
 
-    <!-- Main Content Section -->
-    <main>
-        <!-- Top Navigation Menu -->
-<div class="topnav">
-    <a href="#home" class="active">Water Damage</a>
-    <!-- Navigation links (hidden by default) -->
-    <div id="myLinks">
-      <a href="contact.html">Contact</a>
-      <a href="moreAboutus.html">About</a>
-      <a href="Reviews.html">Reviews</a>
-      <a href="opener.html" class="active">Main</a>
+<!-- Navigation bar -->
+<nav class="bg-blue-500 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="home.html" class="text-white text-2xl font-semibold">DamageDetect Pro</a>
+        <ul class="flex space-x-4">
+            <li><a href="contact.html" class="text-white hover:text-gray-300">Contact</a></li>
+            <li><a href="moreabout.html" class="text-white hover:text-gray-300">About Us</a></li>        </ul>
     </div>
-    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-        <section id="imageUpload">
-            <h2>Upload an Image</h2>
-            <p>Upload a photo of the damaged area for analysis:</p>
-            <input type="file" accept="image/*" id="imageInput">
-            <button id="analyzeButton">Analyze</button>
-        </section>
+</nav>
 
-        <section id="results">
-            <h2>Analysis Results</h2>
-            <div id="resultImage">
-                <!-- Display the analyzed image or results here -->
+<!-- Hero section -->
+<div class="bg-blue-900 text-white py-16 px-4">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-semibold">Protect Your Home with Our Insurance</h1>
+        <p class="mt-4 text-lg">Get peace of mind knowing your home is covered with our comprehensive insurance plans.</p>
+        <a href="functional.html" class="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-semibold px-6 py-3 rounded-full">Get a Quote</a>
+    </div>
+</div>
+
+<!-- Features section -->
+<div class="py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-semibold">Why Choose Our Home Insurance?</h2>
+        <div class="flex flex-col md:flex-row justify-center mt-8 space-y-4 md:space-y-0 md:space-x-4">
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <i class="fas fa-shield-alt text-3xl text-blue-500"></i>
+                <h3 class="text-xl font-semibold mt-4">Comprehensive Coverage</h3>
+                <p class="mt-2">We offer complete coverage for your home, protecting you from unexpected events.</p>
             </div>
-            <p id="damageStatus">Damage Status: <span id="damageValue">Awaiting Analysis</span></p>
-        </section>
-        <section>
-        
-        </section>
-    </main>
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <i class="fas fa-hand-holding-heart text-3xl text-blue-500"></i>
+                <h3 class="text-xl font-semibold mt-4">Personalized Service</h3>
+                <p class="mt-2">Our team provides personalized service to meet your unique insurance needs.</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <i class="fas fa-dollar-sign text-3xl text-blue-500"></i>
+                <h3 class="text-xl font-semibold mt-4">Affordable Rates</h3>
+                <p class="mt-2">We offer competitive rates to ensure you get the best value for your money.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damage Detect Pro Reviews</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+<div class="container mx-auto mt-8">
+    <!-- Review 1 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+        <div class="flex items-center mb-4">
+            <!-- Star Rating -->
+            <div class="text-yellow-400">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <span class="ml-2 text-gray-700 font-semibold">Review by Jane D:</span>
+        </div>
+        <p class="text-gray-600">"I loved Damage Detect so much, I gave it 6 stars! Damage Detect Pro has been a game-changer for me as a homeowner. Their AI technology accurately predicted a potential water leak in my basement before it could cause any serious damage. Thanks to their proactive approach, I was able to fix the issue quickly and save thousands in repair costs. I can't recommend them enough!"</p>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+        <div class="flex items-center mb-4">
+            <!-- Star Rating -->
+            <div class="text-yellow-400">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <span class="ml-2 text-gray-700 font-semibold">Review by John S:</span>
+        </div>
+        <p class="text-gray-600">"I was initially skeptical about using AI to predict water damage, but Damage Detect Pro exceeded my expectations. Their system is incredibly accurate and even detected a hidden leak in my kitchen that I would have never noticed until it became a major problem. Their service has given me peace of mind, knowing that my home is protected."</p>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+        <div class="flex items-center mb-4">
+            <!-- Star Rating -->
+            <div class="text-yellow-400">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <span class="ml-2 text-gray-700 font-semibold">Review by Sarah M:</span>
+        </div>
+        <p class="text-gray-600">"As a property manager, I rely on Damage Detect Pro to help me maintain my rental properties. Their AI technology has saved me from costly repairs and tenant complaints multiple times. The real-time alerts and detailed reports make it easy for me to address potential water damage issues before they escalate. It's a must-have tool in the property management industry."</p>
+    </div>
+
+    <!-- Review 4 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+        <div class="flex items-center mb-4">
+            <!-- Star Rating -->
+            <div class="text-yellow-400">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <span class="ml-2 text-gray-700 font-semibold">Review by David H:</span>
+        </div>
+        <p class="text-gray-600">"Damage Detect Pro has not only saved me money but also a lot of stress. I had a previous water damage incident that was a nightmare to deal with. Since using their service, I've had peace of mind knowing that any issues will be detected early. Their customer support team is also top-notch, always ready to assist."</p>
+    </div>
+
+    <!-- Review 5 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+        <div class="flex items-center mb-4">
+            <!-- Star Rating -->
+            <div class="text-yellow-400">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <span class="ml-2 text-gray-700 font-semibold">Review by Emily R:</span>
+        </div>
+        <p class="text-gray-600">"Having recently moved into an older home, I was concerned about potential water damage issues. Damage Detect Pro has been a lifesaver! Their AI-powered system is easy to set up and provides constant monitoring. It's like having a water damage expert in your home 24/7. I feel much more confident in the safety of my new home."</p>
+    </div>
+</div>
+
+</body>
+</html>
 
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2023 HackUTA MHS People. All rights reserved.</p>
-    </footer>
+<!-- Contact section -->
+<div class="bg-blue-900 text-white py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-semibold">Contact Us Today</h2>
+        <p class="mt-4">Have questions or need a quote? Reach out to us, and we'll be happy to assist you.</p>
+        <a href="#" class="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-semibold px-6 py-3 rounded-full">Contact Us</a>
+    </div>
+</div>
 
-    <!-- Add your JavaScript code here to handle image analysis and display results -->
-    <script>
-        // JavaScript code for rotating the logo on scroll
-window.addEventListener("scroll", function() {
-    const logo = document.getElementById("logo");
-    const scrollY = window.scrollY;
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2023 Damage Detect Pro. All rights reserved.</p>
+    </div>
+</footer>
 
-    // Define the rotation angle based on scroll position
-    const rotationAngle = scrollY; // Adjust the divisor to control rotation speed
-
-    // Apply the rotation to the logo
-    logo.style.transform = `rotate(${rotationAngle}deg)`;
-});
-
-    </script>
-        <script>
-            function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-        </script>
 </body>
 </html>
