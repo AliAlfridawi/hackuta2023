@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More About Damage Detect Pro</title>
+    <link rel="stylesheet" href="main.css"> <!-- Add this line to link your CSS file -->
+</head>
+<div class="topnav">
+    <a href="opener.html" class="active">Main</a>
+    <!-- Navigatimoreaboutus.htmlon links (hidden by default) -->
+    <div id="myLinks">
+      <a href="contact.html">Contact</a>
+      <a href="main.html">Water Damage</a>
+      <a href="moreAboutus.html">About Us</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+<script>
+    function myFunction() { 
+       var x = document.getElementById("myLinks");
+ if (x.style.display === "block") {
+   x.style.display = "none";
+ } else {
+   x.style.display = "block";
+ }
+}
+</script>
+</body>
+</html>
