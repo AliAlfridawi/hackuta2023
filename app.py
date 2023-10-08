@@ -88,14 +88,14 @@ def upload_image():
 
         photoName = saved_image_path
         # infer on a local image
-        predictions = model.predict(photoName, confidence=50, overlap=30).json()
+        predictions = model.predict(photoName, confidence=40, overlap=30).json()
         print(predictions)
 
         # visualize your prediction
         annotated_image_name = "prediction.jpg"
         annotated_image_path = os.path.join(app.config['UPLOAD_FOLDER'], annotated_image_name)
 
-        model.predict(photoName, confidence=1, overlap=30).save(annotated_image_path)  
+        model.predict(photoName, confidence=40, overlap=30).save(annotated_image_path)  
 
         predictions.update({"annotated_image_path": annotated_image_path})
 
