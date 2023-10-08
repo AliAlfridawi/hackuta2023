@@ -9,7 +9,7 @@ html, body, h1, h2, p, div, section {
 body {
     background-color: #E7CFBC;
     font-family: Arial, sans-serif;
-    background-image: url('crack.png'); /* Path to your image */
+    background-color: #f4e69b; 
     background-size: cover;
     background-attachment: fixed; /* Keeps the background fixed as you scroll */
     background-position: center center;
