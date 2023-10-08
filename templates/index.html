@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="form">
+    <form action="/download" enctype="multipart/form-data" method="POST">
+        <input type="file" name="content" id="content">
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}
