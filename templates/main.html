@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DamageDetect Pro</title>
+    <!-- Include Tailwind CSS -->
+    <link rel="icon" href="{{ url_for('static', filename='/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+<!-- Navigation bar -->
+<nav class="bg-blue-500 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="{{ url_for('main') }}" class="text-white text-2xl font-semibold">DamageDetect Pro</a>
+
+        <ul class="flex space-x-4">
+            <li><a href="{{ url_for('contact') }}" class="text-white hover:text-gray-300">Contact</a></li>
+            <li><a href="{{ url_for('moreabout') }}" class="text-white hover:text-gray-300">About Us</a></li>        </ul>
+    </div>
+</nav>
+
+<!-- Hero section -->
+<div class="bg-blue-900 text-white py-16 px-4">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-semibold">Protect Your Home with Our Insurance</h1>
+        <p class="mt-4 text-lg">Get peace of mind knowing your home is covered with our comprehensive insurance plans.</p>
+        <a href="{{ url_for('functional') }}" class="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-semibold px-6 py-3 rounded-full">Get a Quote</a>
+    </div>
+</div>
+
+<!-- Features section -->
+<div class="py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-semibold">Why Choose Our Home Insurance?</h2>
+        <div class="flex flex-col md:flex-row justify-center mt-8 space-y-4 md:space-y-0 md:space-x-4">
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <i class="fas fa-shield-alt text-3xl text-blue-500"></i>
+                <h3 class="text-xl font-semibold mt-4">Comprehensive Coverage</h3>
+                <p class="mt-2">We offer complete coverage for your home, protecting you from unexpected events.</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <i class="fas fa-hand-holding-heart text-3xl text-blue-500"></i>
+                <h3 class="text-xl font-semibold mt-4">Personalized Service</h3>
+                <p class="mt-2">Our team provides personalized service to meet your unique insurance needs.</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <i class="fas fa-dollar-sign text-3xl text-blue-500"></i>
+                <h3 class="text-xl font-semibold mt-4">Affordable Rates</h3>
+                <p class="mt-2">We offer competitive rates to ensure you get the best value for your money.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damage Detect Pro Reviews</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+<div class="container mx-auto mt-8">
+    <!-- Review 1 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+        <div class="flex items-center mb-4">
+            <!-- Star Rating -->
+            <div class="text-yellow-400">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <span class="ml-2 text-gray-700 font-semibold">Review by Jane D:</span>
+        </div>
+        <p class="text-gray-600">"I loved Damage Detect so much, I gave it 6 stars! Damage Detect Pro has been a game-changer for me as a homeowner. Their AI technology accurately predicted a potential water leak in my basement before it could cause any serious damage. Thanks to their proactive approach, I was able to fix the issue quickly and save thousands in repair costs. I can't recommend them enough!"</p>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+        <div class="flex items-center mb-4">
+            <!-- Star Rating -->
+            <div class="text-yellow-400">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <span class="ml-2 text-gray-700 font-semibold">Review by John S:</span>
+        </div>
+        <p class="text-gray-600">"I was initially skeptical about using AI to predict water damage, but Damage Detect Pro exceeded my expectations. Their system is incredibly accurate and even detected a hidden leak in my kitchen that I would have never noticed until it became a major problem. Their service has given me peace of mind, knowing that my home is protected."</p>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+        <div class="flex items-center mb-4">
+            <!-- Star Rating -->
+            <div class="text-yellow-400">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <span class="ml-2 text-gray-700 font-semibold">Review by Sarah M:</span>
+        </div>
+        <p class="text-gray-600">"As a property manager, I rely on Damage Detect Pro to help me maintain my rental properties. Their AI technology has saved me from costly repairs and tenant complaints multiple times. The real-time alerts and detailed reports make it easy for me to address potential water damage issues before they escalate. It's a must-have tool in the property management industry."</p>
+    </div>
+
+    <!-- Review 4 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+        <div class="flex items-center mb-4">
+            <!-- Star Rating -->
+            <div class="text-yellow-400">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <span class="ml-2 text-gray-700 font-semibold">Review by David H:</span>
+        </div>
+        <p class="text-gray-600">"Damage Detect Pro has not only saved me money but also a lot of stress. I had a previous water damage incident that was a nightmare to deal with. Since using their service, I've had peace of mind knowing that any issues will be detected early. Their customer support team is also top-notch, always ready to assist."</p>
+    </div>
+
+    <!-- Review 5 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+        <div class="flex items-center mb-4">
+            <!-- Star Rating -->
+            <div class="text-yellow-400">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <span class="ml-2 text-gray-700 font-semibold">Review by Emily R:</span>
+        </div>
+        <p class="text-gray-600">"Having recently moved into an older home, I was concerned about potential water damage issues. Damage Detect Pro has been a lifesaver! Their AI-powered system is easy to set up and provides constant monitoring. It's like having a water damage expert in your home 24/7. I feel much more confident in the safety of my new home."</p>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<!-- Contact section -->
+<div class="bg-blue-900 text-white py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-semibold">Contact Us Today</h2>
+        <p class="mt-4">Have questions or need a quote? Reach out to us, and we'll be happy to assist you.</p>
+        <a href="#" class="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-semibold px-6 py-3 rounded-full">Contact Us</a>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2023 Damage Detect Pro. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

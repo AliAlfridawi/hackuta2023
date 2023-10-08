@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roof and Foundation Damage Detection</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<!-- ... rest of your HTML code ... -->
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roof and Foundation Damage Detection</title>
+    <!-- Add your CSS and JavaScript links here if needed -->
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header Section -->
+    <header class="bg-blue-500 text-white p-4">
+        <a href="{{ url_for('main') }}" class="text-white text-2xl font-semibold">DamageDetect Pro</a>
+        <h1 class="text-3xl font-semibold">Welcome to Roof and Foundation Damage Detection</h1>
+        <p class="mt-2">Your trusted solution for assessing roof and foundation issues.</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="p-4">
+        <section id="imageUpload" class="bg-white shadow-md p-4 rounded-md">
+            <h2 class="text-xl font-semibold">Upload an Image</h2>
+            <p class="mt-2">Upload a photo of the damaged area for analysis:</p>
+            <input type="file" accept="image/*" id="imageInput" onchange="previewImage()" class="mt-2">
+            <img id="imagePreview" src="#" alt="Image Preview" style="display: none; max-width: 300px; max-height: 300px;" class="mt-2">
+            <button id="analyzeButton" onclick="uploadImage()" class="mt-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Analyze</button>
+        </section>
+
+        <section id="results" class="mt-4 bg-white shadow-md p-4 rounded-md">
+            <h2 class="text-xl font-semibold">Analysis Results</h2>
+            <div id="resultImage" class="mt-2">
+                <img src="{{url_for('static', filename='prediction.jpg')}}" id="output" class="max-w-full">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-500 text-white p-4 mt-4">
+        <p>&copy; 2023 HackUTA MHS People. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+        function previewImage() {
+            var fileInput = document.getElementById('imageInput');
+            var imagePreview = document.getElementById('imagePreview');
+            console.log("here2");
+            // Check if a file is selected
+            if (fileInput.files.length > 0) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    imagePreview.src = e.target.result;
+                    imagePreview.style.display = 'block';
+                };
+
+                reader.readAsDataURL(fileInput.files[0]);
+            } else {
+                imagePreview.src = '#';
+                imagePreview.style.display = 'none';
+            }
+        }
+
+        function uploadImage() {
+            var formData = new FormData();
+            var fileInput = document.getElementById('imageInput');
+            
+            // Check if a file is selected
+            if (fileInput.files.length > 0) {
+                formData.append('image', fileInput.files[0]);
+    
+                // Use AJAX to send the image data to Flask
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/upload', true);
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        console.log('Image uploaded successfully');
+                        console.log(xhr.responseText);
+                        console.log(typeof xhr.responseText);
+                        prediction_data = JSON.parse(xhr.responseText);
+                        console.log(typeof prediction_data);
+                        image_path = prediction_data["annotated_image_path"];
+                        console.log(image_path);
+                        location.reload();
+
+                        /*
+                        var output = document.getElementById('output');
+                        output.src = image_path;
+                        console.log(output.src);
+
+                        var reader = new FileReader();
+
+                        reader.onload = function(e) {
+                            output.src = e.target.result;
+                            output.style.display = 'block';
+                        };
+                        //reader.readAsDataURL(image_path);*/
+
+                    } else {
+                        console.error('Image upload failed');
+                    }
+                };
+                xhr.send(formData);
+            } else {
+                console.error('No image selected');
+            }
+        }
+    </script>
+</body>
+
+</html>
